@@ -1,20 +1,29 @@
 import React from 'react';
+import { Link} from "react-router-dom";
 
 
 class Nav extends React.Component {
     render() {
         return(
-        <nav class="container">
-            <a href="/" className="logo"><img src="images/little-lemon-logo.JPG" alt="Little Lemon"/></a>
-            <ul >
-                <li><a href="home.html">Home</a></li>
-                <li><a href="blog.html">About</a></li>
-                <li><a href="news.html">Menu</a></li>
-                <li><a href="news.html">Reservations</a></li>
-                <li><a href="news.html">Order Online</a></li>
-                <li><a href="news.html">Login</a></li>
-            </ul>
-        </nav>
+
+        <div className="nav-container">
+            <nav className="container">
+                <a href="/" className="logo"><img src="images/little-lemon-logo.JPG" alt="Little Lemon"/></a>
+
+                <input type="checkbox" id="nav-toggle"/>
+                <label htmlFor="nav-toggle" className="burger-menu">
+                    <img src="images/nav-menu.png" alt="Nav Menu"/>
+                </label>
+                <div className="menu-items">
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/menu">Menu</Link>
+                    <Link to="/reservations">Reservations</Link>
+                    <Link to="/order">Order Online</Link>
+                    <Link to="/login">Login</Link>
+                </div>
+            </nav>
+        </div>
         )
     }
 }
