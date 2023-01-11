@@ -395,6 +395,7 @@ button {
 
 .section-menu  {
   margin-left: 10px;
+  min-height: 650px;
 }
 
 .section-menu h1 {

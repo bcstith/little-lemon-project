@@ -28,6 +28,7 @@ function BookingForm(){
     const [date, setDate] = useState(todaysDate);
     const[time, setTime] = useState(fetchAPI(sDate));
     const [confirm, setConfirm] = useState(false);
+    const [data, setData] = useState("");
 
     let showAvailableDates = fetchAPI(sDate) ;
 
@@ -45,23 +46,20 @@ function BookingForm(){
 
             }),
         onSubmit: (values) => {
-            alert(JSON.stringify(values, null, 2));
+           // alert(JSON.stringify(values, null, 2));
 
            const formSubmit = submitAPI(values);
 
            if(formSubmit){
                 setConfirm(true);
+                setData(values);
            }
         }
       });
 
       if(confirm){
         return (
-            <Navigate
-              to={{
-                pathname: "/confirmation",
-              }}
-            />
+            <Navigate to={"/confirmation"} state={{ data }} />
           );
       }
 
@@ -80,12 +78,8 @@ function BookingForm(){
         setDate(event.target.value)
 
        showAvailableDates = fetchAPI(dateCombo) ;
-        alert(showAvailableDates);
-
        setTime(showAvailableDates)
     }
-
- 
 
 
 
