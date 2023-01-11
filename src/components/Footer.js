@@ -23,8 +23,8 @@ class Footer extends React.Component {
                             </div>
                             <div className="grid-item footer-newsletter">
                                 <form>
-                                    <label for="newsletter">Sign up for our newsletter</label> <br />
-                                    <input type="text" name="newsletter" placeholder='Enter Email' /> <button>Sign Up</button>
+                                    <label htmlFor="newsletter">Sign up for our newsletter</label> <br />
+                                    <input type="text" id="newsletter" name="newsletter" placeholder='Enter Email' /> <button>Sign Up</button>
                                 </form>
 
                                 <p className="footer-copyright">&copy; Copyright 2023</p>

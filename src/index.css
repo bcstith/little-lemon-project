@@ -364,7 +364,6 @@ button {
 }
 
 .footer-copyright{
-  text-align: center;
   font-size: 9pt;
 }
 
@@ -392,4 +391,97 @@ button {
   background-color: #495E57;
   max-height: 220px;
   width: 100%;
+}
+
+.section-menu  {
+  margin-left: 10px;
+}
+
+.section-menu h1 {
+  color:#EE9972;
+  font-family: 'Markazi+Text';
+  font-size: 25pt;
+  font-weight:500;
+  text-transform: uppercase;
+  padding-left:10px;
+}
+
+.booking-form {
+  margin-left: 30px;
+  padding-left: 30px;
+}
+
+
+input[type=text], input[type=number], input[type=date], input[type=time], Input, Select, Field {
+  width: 60%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.booking-form-input {
+  padding-top: 10px;
+  font-family: Karla, sans-serif;
+  font-size: 14pt;
+  font-weight:500;
+}
+
+.time-section {
+  padding-bottom: 15px;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1rem;
+  /*background-color: #333333; **/
+  padding: 10px;
+}
+
+.time-grid > .grid-item {
+  background-color: #EE9972;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-family: Karla, sans-serif;
+  font-size: 14pt;
+  text-align: center;
+}
+
+.button-section {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:75%;
+}
+
+.button-section  button {
+  padding: 15px;
+  font-family: Karla, sans-serif;
+  font-size: 11pt;
+  border: 1px solid #333333;
+  padding: 10px 15px 10px 10px;
+}
+
+.reservation-button {
+  background-color: #FBDABB;
+  padding-left: 15px !important;
+  margin-left: 15px !important;
+}
+
+.cancel-button {
+  background-color: #EDEFEE;
+  padding-left: 15px !important;
+  margin-left: 15px !important;
+}
+
+.error-message, FormErrorMessage {
+  color: #cc0033;
+  display: inline-block;
+  font-size: 12px;
+  font-weight:bold;
+  margin: 0 0 5px;
+  border-color:  #cc0033 !important;
 }
